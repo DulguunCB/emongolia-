@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container img{
+            width: 100%;
+        }
+        .container input{
+            width: 76%;
+            height: 30px;
+            padding: 0 15px;
+
+        }
+        .container p{
+            width: 85%;
+            margin: 10px 0 0 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1877F2;
+            font-size: 14px;
+        }
+        .container .blue, .white, .engiin{
+            width: 85%;
+            height: 40px;
+            margin-top: 10px;
+        }
+        .blue{
+            background-color: #4400ff;
+            border: none;
+            border-radius: 3px;
+        }
+        .white{
+            background: none;
+            border: none;
+        }
+        .engiin{
+            background: none;
+            border-radius: 3px;
+            border: 1px solid rgb(124, 124, 124);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./test.1.jpg" alt="">
+        <input id="name" type="text" placeholder="Бүртгэлийн дугаар"><br>
+        <input id="password" type="text" placeholder="Нууц үг">
+        <p>Нууц үгээ мартсан уу?</p>
+        <p>Бүртгэлтэй утасны дугаараа солих</p>
+        <button class="blue" id="btn">Нэвтрэх</button>
+        <button class="white">Эсвэл</button>
+        <button class="engiin">Банкны эрхээр нэвтрэх</button>
+        <button class="engiin">Тоон гарын үсгээр нэвтрэх</button>
+        <button class="engiin">Хүүхдээр нэвтрэх</button>
+    </div>
+
+    <script>
+        
+        var btn = document.getElementById('btn')
+
+        
+
+        btn.addEventListener('click', ()=>{
+            var name = document.getElementById('name').value
+            var pass = document.getElementById('password').value
+            console.log(name)
+            if(name == 'Dulguun_29' && pass == '02310811'){
+                window.location.href = './duk/duk-index.html'
+            }else if(name == 'Monhbat' && pass == '0416'){
+                window.location.href = './muuyuu/muuyuu-index.html'
+            }else if(name == 'Narankhuu' && pass == '0611'){
+                window.location.href = './naayaa/naayaa-index.html'
+            }else if(name == 'Baylagmaa' && pass == 'Baylagmaa0706'){
+                window.location.href = './baylag/baylag-index.html'
+            }else if(name == 'Temuulen' && pass == 'Temuulen0115'){
+                window.location.href = './andrei/andrei-index.html'
+            }else if(name == 80272768 && pass == 'Bilegmaa0204'){
+                window.location.href = './Bilegmaa/bilegmaa-index.html'
+            }else if (name == 80345051 && pass == 'Erdenehuu0330'){
+                window.location.href = './erdenehuu/erdenehuu-index.html'
+            }else if (name == 'Hongroo1234' && pass == '20030702'){
+                window.location.href = './hongroo/hongroo-index.html'
+            }
+        })
+
+    </script>
+</body>
+</html>

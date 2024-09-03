@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./medeele.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="../emongolia_logo-removebg-preview.png" alt="" />
+      <div class="items">
+        <i class="bi bi-envelope-arrow-down-fill"></i>
+        <i class="bi bi-bell-fill"></i>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <div class="container">
+      <div class="left">
+        <div class="med-img"></div>
+        <img src="../soyomb-removebg-preview.png" alt="" />
+      </div>
+      <div class="right">
+        <h6>Оройн мэнд!</h6>
+        <p class="name">М.Билэгмаа</p>
+        <h5>276878987433@e-mongolia.mn</h5>
+      </div>
+    </div>
+    <h3>Миний бичиг баримтууд</h3>
+
+    <div class="unemleh">
+      <div class="unemleh-zurag"></div>
+      <p>Иргэний үнэмлэх</p>
+    </div>
+    <h3>Хэрэгцээт үйлдэл</h3>
+
+    <div class="main">
+      <div class="items">
+        <img src="../image1.jpg" alt="" />
+        <p>Тээврийн хэрэгсэл</p>
+      </div>
+      <div class="items">
+        <img src="../image2.jpg" alt="" />
+        <p>Нотариат үйлчилгээ</p>
+      </div>
+      <div class="items">
+        <img src="../image3.jpg" alt="" />
+        <p>Нийгмийн даатгал</p>
+      </div>
+      <div class="items">
+        <img src="../image4.jpg" alt="" />
+        <p>Хүүхдийн мөнгө</p>
+      </div>
+      <div class="items">
+        <img src="../image5.jpg" alt="" />
+        <p>Эрүүл мэнд</p>
+      </div>
+      <div class="items">
+        <img src="../image6.jpg" alt="" />
+        <p>Үнэм цааснууд / хувьцаа</p>
+      </div>
+      <div class="items">
+        <img src="../image7.jpg" alt="" />
+        <p>Зээлийн мэдээлэл</p>
+      </div>
+      <div class="items">
+        <img src="../image8.jpg" alt="" />
+        <p>Татвар</p>
+      </div>
+      <div class="items">
+        <img src="../image9.jpg" alt="" />
+        <p>Компани</p>
+      </div>
+      <div class="items">
+        <img src="../image10.jpg" alt="" />
+        <p>what3words</p>
+      </div>
+      <br />
+      <div class="items">
+        <img src="../image11.jpg" alt="" />
+        <p>Тохиргоо</p>
+      </div>
+      <div class="items">
+        <img src="../image12.jpg" alt="" />
+        <p>Үйлчилгээний нөхцөл</p>
+      </div>
+      <div class="items">
+        <img src="../image13.jpg" alt="" />
+        <p>Системээс гарах</p>
+      </div>
+      <div class="items"></div>
+    </div>
+
+    <div class="projectD">
+      <h3>Иргэний үнэмлэх</h3>
+      <div class="unemleh-zurag">
+        <img src="./429454293_1123741652313947_1683094028817916648_n.jpg" alt="">
+      </div>
+      <div class="el">
+        <button id="z">Дахин захиалах</button>
+        <div id="r"><i class="bi bi-arrow-repeat"></i></div>
+      </div>
+      <button id="close">Хаах</button>
+    </div>
+
+    <script>
+        var project = document.querySelector('.projectD')
+        var close1 = document.getElementById('close')
+        var unemleh = document.querySelector('.unemleh')
+
+        unemleh.addEventListener('click', ()=>{
+            project.style.display = 'flex'
+        })
+
+        close1.addEventListener('click', ()=>{
+            project.style.display = 'none'
+        })
+    </script>
+  </body>
+</html>

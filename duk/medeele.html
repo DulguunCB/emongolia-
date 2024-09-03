@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./medeelel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="hhah">
+      <div class="navbar">
+        <img src="../emongolia_logo-removebg-preview.png" alt="" />
+        <div class="items">
+          <i class="bi bi-envelope-arrow-down-fill"></i>
+          <i class="bi bi-bell-fill"></i>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <h3>Миний бичиг баримтууд</h3>
+
+      <div class="unemleh">
+        <div class="unemleh-zurag">
+          <img src="./43CF43F8-BF31-4C6D-BB5A-AA744575DAF6.JPEG" alt="" />
+        </div>
+        <p>Иргэний үнэмлэх</p>
+      </div>
+      <h3>Хэрэгцээт үйлдэл</h3>
+
+      <div class="main">
+        <div class="items">
+          <img src="../image1.jpg" alt="" />
+          <p>Тээврийн хэрэгсэл</p>
+        </div>
+        <div class="items">
+          <img src="../image2.jpg" alt="" />
+          <p>Нотариат үйлчилгээ</p>
+        </div>
+        <div class="items">
+          <img src="../image3.jpg" alt="" />
+          <p>Нийгмийн даатгал</p>
+        </div>
+        <div class="items">
+          <img src="../image4.jpg" alt="" />
+          <p>Хүүхдийн мөнгө</p>
+        </div>
+        <div class="items">
+          <img src="../image5.jpg" alt="" />
+          <p>Эрүүл мэнд</p>
+        </div>
+        <div class="items">
+          <img src="../image6.jpg" alt="" />
+          <p>Үнэм цааснууд / хувьцаа</p>
+        </div>
+        <div class="items">
+          <img src="../image7.jpg" alt="" />
+          <p>Зээлийн мэдээлэл</p>
+        </div>
+        <div class="items">
+          <img src="../image8.jpg" alt="" />
+          <p>Татвар</p>
+        </div>
+        <div class="items">
+          <img src="../image9.jpg" alt="" />
+          <p>Компани</p>
+        </div>
+        <div class="items">
+          <img src="../image10.jpg" alt="" />
+          <p>what3words</p>
+        </div>
+        <br />
+        <div class="items">
+          <img src="../image11.jpg" alt="" />
+          <p>Тохиргоо</p>
+        </div>
+        <div class="items">
+          <img src="../image12.jpg" alt="" />
+          <p>Үйлчилгээний нөхцөл</p>
+        </div>
+        <div class="items">
+          <img src="../image13.jpg" alt="" />
+          <p>Системээс гарах</p>
+        </div>
+        <div class="items"></div>
+      </div>
+    </div>
+
+    <div class="hheh"></div>
+
+    <div class="projectD">
+      <h3>Иргэний үнэмлэх</h3>
+      <!-- <div class="unemleh-zurag">
+        <img src="./5D9B250C-C681-421A-A879-BA783C945611.jpg" alt="" />
+      </div> -->
+
+      <div class="card-container" id="cardContainer">
+        <div class="card">
+          <div class="card-front">
+            <img src="./43CF43F8-BF31-4C6D-BB5A-AA744575DAF6.JPEG" alt="" />
+          </div>
+          <div class="card-back">
+            <img src="./IMG_1784.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="el">
+        <button id="z">Дахин захиалах</button>
+        <div id="r"><i class="bi bi-arrow-repeat"></i></div>
+      </div>
+      <button id="close">Хаах</button>
+    </div>
+
+    <script>
+      var project = document.querySelector(".projectD");
+      var close1 = document.getElementById("close");
+      var unemleh = document.querySelector(".unemleh");
+      var hheh = document.querySelector(".hheh");
+      var r = document.getElementById('r')
+
+      unemleh.addEventListener("click", () => {
+        project.style.display = "flex";
+        hheh.style.display = "block";
+      });
+
+      close1.addEventListener("click", () => {
+        project.style.display = "none";
+        hheh.style.display = "none";
+      });
+    </script>
+
+    <script>
+      const cardContainer = document.getElementById("cardContainer");
+      let isFlipped = false;
+
+      cardContainer.addEventListener("click", function () {
+        const card = this.querySelector(".card");
+        if (isFlipped) {
+          card.style.transform = "rotateY(0deg)";
+        } else {
+          card.style.transform = "rotateY(180deg)";
+        }
+        isFlipped = !isFlipped;
+      });
+    </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>

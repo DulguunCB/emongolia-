@@ -1,0 +1,239 @@
+
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100vw;
+    height: 55px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar img{
+    width: 170px;
+}
+
+.navbar .items{
+    color: blue;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.container{
+    width: 100vw;
+    height: 135px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.container .med-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url('./412057724_1080939683260180_3305049024666295727_n.jpg') center center/contain no-repeat;
+}
+
+.container img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+}
+
+
+.name{
+    color: rgb(56, 75, 92);
+}
+h6, h5{
+    color: rgb(89, 135, 175);
+}
+
+h3{
+    margin: 20px 0 0 20px;
+    color: rgb(89, 135, 175)
+}
+
+.unemleh{
+    width: 375px;
+
+    margin: 20px 0 0 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.unemleh-zurag img{
+    width: 100%;
+    
+}
+
+/* .unemleh-zurag{
+    width: 100%;
+    height: 80%;
+    background: url('./5D9B250C-C681-421A-A879-BA783C945611.jpg') center center/cover no-repeat;
+    border-radius: 5px;
+} */
+
+.unemleh p{
+    margin-top: 8px;
+    border-top: 1px solid rgb(203, 203, 203);
+    text-align: center;
+    color: rgb(89, 135, 175);
+    font-size: 14px;
+}
+
+.main{
+    width: 100vw;
+    display: flex;
+    justify-content: center !important; 
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.main .items{
+    width: 90%;
+    height: 60px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    display: flex   ;
+    align-items: center;
+    gap: 15px;
+    padding: 0 15px;
+    border: 1px solid rgb(135, 165, 214);
+    border-radius: 30px;
+}
+
+.main .items img{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.projectD{
+    width: 100vw;
+    height: 60vh;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    display: none;
+    padding-top: 40px;
+    z-index: 5;
+
+}
+
+.projectD .unemleh-zurag{
+    width: 86%;
+    height: 225px;
+    background: url('./412112514_290815133802820_7714044955774468678_n\ \(1\).jpg') center center/contain no-repeat;
+    border-radius: 10px;
+}
+
+.projectD .el{
+    display: flex;
+    gap: 10px;
+}
+
+.projectD .el #z{
+    width: 260px;
+    height: 50px;
+    background-color: blue;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+}
+
+.projectD .el #r{
+    border: 1px solid blue;
+    padding: 12px 20px;
+    border-radius: 50px;
+    color: blue;
+    font-size: 18px;
+}
+
+#close{
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+
+
+.hheh{
+    width: 100vw;
+    height: 1000px;
+    background-color: rgb(221, 220, 220);
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    display: none;
+    z-index: 4;
+}
+
+
+.card-container {
+    perspective: 1000px;
+}
+
+.card {
+    width: 350px;
+    height: 220px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+.card-front img{
+    width: 100%;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card-back img {
+    width: 100%;
+}
